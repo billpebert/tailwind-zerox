@@ -4,7 +4,8 @@ module.exports = {
   theme: {
 
     fontFamily: {
-      'sans': 'DM Sans, sans-serif'
+      'primary': 'DM Sans, sans-serif',
+      'secondary': 'Mulish, sans-serif'
     },
 
     colors: {
