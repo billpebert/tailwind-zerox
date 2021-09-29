@@ -4227,6 +4227,10 @@ select{
   margin: 7rem;
 }
 
+.m-30{
+  margin: 30px;
+}
+
 .m-32{
   margin: 8rem;
 }
@@ -4527,6 +4531,11 @@ select{
 .mx-28{
   margin-left: 7rem;
   margin-right: 7rem;
+}
+
+.mx-30{
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .mx-32{
@@ -4884,6 +4893,11 @@ select{
   margin-bottom: 7rem;
 }
 
+.my-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .my-32{
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -5221,6 +5235,10 @@ select{
   margin-top: 7rem;
 }
 
+.mt-30{
+  margin-top: 30px;
+}
+
 .mt-32{
   margin-top: 8rem;
 }
@@ -5503,6 +5521,10 @@ select{
 
 .mr-28{
   margin-right: 7rem;
+}
+
+.mr-30{
+  margin-right: 30px;
 }
 
 .mr-32{
@@ -5789,6 +5811,10 @@ select{
   margin-bottom: 7rem;
 }
 
+.mb-30{
+  margin-bottom: 30px;
+}
+
 .mb-32{
   margin-bottom: 8rem;
 }
@@ -6071,6 +6097,10 @@ select{
 
 .ml-28{
   margin-left: 7rem;
+}
+
+.ml-30{
+  margin-left: 30px;
 }
 
 .ml-32{
@@ -21879,6 +21909,10 @@ select{
     margin: 7rem;
   }
 
+  .sm\:m-30{
+    margin: 30px;
+  }
+
   .sm\:m-32{
     margin: 8rem;
   }
@@ -22179,6 +22213,11 @@ select{
   .sm\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .sm\:mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .sm\:mx-32{
@@ -22536,6 +22575,11 @@ select{
     margin-bottom: 7rem;
   }
 
+  .sm\:my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .sm\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -22873,6 +22917,10 @@ select{
     margin-top: 7rem;
   }
 
+  .sm\:mt-30{
+    margin-top: 30px;
+  }
+
   .sm\:mt-32{
     margin-top: 8rem;
   }
@@ -23155,6 +23203,10 @@ select{
 
   .sm\:mr-28{
     margin-right: 7rem;
+  }
+
+  .sm\:mr-30{
+    margin-right: 30px;
   }
 
   .sm\:mr-32{
@@ -23441,6 +23493,10 @@ select{
     margin-bottom: 7rem;
   }
 
+  .sm\:mb-30{
+    margin-bottom: 30px;
+  }
+
   .sm\:mb-32{
     margin-bottom: 8rem;
   }
@@ -23723,6 +23779,10 @@ select{
 
   .sm\:ml-28{
     margin-left: 7rem;
+  }
+
+  .sm\:ml-30{
+    margin-left: 30px;
   }
 
   .sm\:ml-32{
@@ -39425,6 +39485,10 @@ select{
     margin: 7rem;
   }
 
+  .md\:m-30{
+    margin: 30px;
+  }
+
   .md\:m-32{
     margin: 8rem;
   }
@@ -39725,6 +39789,11 @@ select{
   .md\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .md\:mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .md\:mx-32{
@@ -40082,6 +40151,11 @@ select{
     margin-bottom: 7rem;
   }
 
+  .md\:my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .md\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -40419,6 +40493,10 @@ select{
     margin-top: 7rem;
   }
 
+  .md\:mt-30{
+    margin-top: 30px;
+  }
+
   .md\:mt-32{
     margin-top: 8rem;
   }
@@ -40701,6 +40779,10 @@ select{
 
   .md\:mr-28{
     margin-right: 7rem;
+  }
+
+  .md\:mr-30{
+    margin-right: 30px;
   }
 
   .md\:mr-32{
@@ -40987,6 +41069,10 @@ select{
     margin-bottom: 7rem;
   }
 
+  .md\:mb-30{
+    margin-bottom: 30px;
+  }
+
   .md\:mb-32{
     margin-bottom: 8rem;
   }
@@ -41269,6 +41355,10 @@ select{
 
   .md\:ml-28{
     margin-left: 7rem;
+  }
+
+  .md\:ml-30{
+    margin-left: 30px;
   }
 
   .md\:ml-32{
@@ -56971,6 +57061,10 @@ select{
     margin: 7rem;
   }
 
+  .lg\:m-30{
+    margin: 30px;
+  }
+
   .lg\:m-32{
     margin: 8rem;
   }
@@ -57271,6 +57365,11 @@ select{
   .lg\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .lg\:mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .lg\:mx-32{
@@ -57628,6 +57727,11 @@ select{
     margin-bottom: 7rem;
   }
 
+  .lg\:my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .lg\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -57965,6 +58069,10 @@ select{
     margin-top: 7rem;
   }
 
+  .lg\:mt-30{
+    margin-top: 30px;
+  }
+
   .lg\:mt-32{
     margin-top: 8rem;
   }
@@ -58247,6 +58355,10 @@ select{
 
   .lg\:mr-28{
     margin-right: 7rem;
+  }
+
+  .lg\:mr-30{
+    margin-right: 30px;
   }
 
   .lg\:mr-32{
@@ -58533,6 +58645,10 @@ select{
     margin-bottom: 7rem;
   }
 
+  .lg\:mb-30{
+    margin-bottom: 30px;
+  }
+
   .lg\:mb-32{
     margin-bottom: 8rem;
   }
@@ -58815,6 +58931,10 @@ select{
 
   .lg\:ml-28{
     margin-left: 7rem;
+  }
+
+  .lg\:ml-30{
+    margin-left: 30px;
   }
 
   .lg\:ml-32{
@@ -74517,6 +74637,10 @@ select{
     margin: 7rem;
   }
 
+  .xl\:m-30{
+    margin: 30px;
+  }
+
   .xl\:m-32{
     margin: 8rem;
   }
@@ -74817,6 +74941,11 @@ select{
   .xl\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .xl\:mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .xl\:mx-32{
@@ -75174,6 +75303,11 @@ select{
     margin-bottom: 7rem;
   }
 
+  .xl\:my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .xl\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -75511,6 +75645,10 @@ select{
     margin-top: 7rem;
   }
 
+  .xl\:mt-30{
+    margin-top: 30px;
+  }
+
   .xl\:mt-32{
     margin-top: 8rem;
   }
@@ -75793,6 +75931,10 @@ select{
 
   .xl\:mr-28{
     margin-right: 7rem;
+  }
+
+  .xl\:mr-30{
+    margin-right: 30px;
   }
 
   .xl\:mr-32{
@@ -76079,6 +76221,10 @@ select{
     margin-bottom: 7rem;
   }
 
+  .xl\:mb-30{
+    margin-bottom: 30px;
+  }
+
   .xl\:mb-32{
     margin-bottom: 8rem;
   }
@@ -76361,6 +76507,10 @@ select{
 
   .xl\:ml-28{
     margin-left: 7rem;
+  }
+
+  .xl\:ml-30{
+    margin-left: 30px;
   }
 
   .xl\:ml-32{
@@ -92063,6 +92213,10 @@ select{
     margin: 7rem;
   }
 
+  .\32xl\:m-30{
+    margin: 30px;
+  }
+
   .\32xl\:m-32{
     margin: 8rem;
   }
@@ -92363,6 +92517,11 @@ select{
   .\32xl\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .\32xl\:mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .\32xl\:mx-32{
@@ -92720,6 +92879,11 @@ select{
     margin-bottom: 7rem;
   }
 
+  .\32xl\:my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .\32xl\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -93057,6 +93221,10 @@ select{
     margin-top: 7rem;
   }
 
+  .\32xl\:mt-30{
+    margin-top: 30px;
+  }
+
   .\32xl\:mt-32{
     margin-top: 8rem;
   }
@@ -93339,6 +93507,10 @@ select{
 
   .\32xl\:mr-28{
     margin-right: 7rem;
+  }
+
+  .\32xl\:mr-30{
+    margin-right: 30px;
   }
 
   .\32xl\:mr-32{
@@ -93625,6 +93797,10 @@ select{
     margin-bottom: 7rem;
   }
 
+  .\32xl\:mb-30{
+    margin-bottom: 30px;
+  }
+
   .\32xl\:mb-32{
     margin-bottom: 8rem;
   }
@@ -93907,6 +94083,10 @@ select{
 
   .\32xl\:ml-28{
     margin-left: 7rem;
+  }
+
+  .\32xl\:ml-30{
+    margin-left: 30px;
   }
 
   .\32xl\:ml-32{

@@ -20,6 +20,9 @@ module.exports = {
       padding: {
         30: '30px',
       },
+      margin: {
+        30: '30px',
+      },
     },
   },
   variants: {
