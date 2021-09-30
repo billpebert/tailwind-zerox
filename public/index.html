@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen max-w-screen-xl mx-auto">
 
-    <div class="container mx-auto">
-
-        <header class="pt-30 font-primary">
-            <nav class="flex justify-between items-center">
-                <img src="assets/icons/logo.svg" alt="logoipsum" />
+    <header class="pt-30 font-primary py-7 my-0.5">
+        <nav class="flex justify-between items-center">
+            <img src="assets/icons/logo.svg" alt="logoipsum" />
+            <div class="hidden lg:block">
                 <ul class="inline-flex text-gray font-bold">
                     <li
                         class="py-2 mx-9 cursor-pointer text-black border-b-4 hover:border-darkblue transition ease-out duration-700 border-darkblue">
@@ -32,87 +31,103 @@
                         class="py-2 mx-9 cursor-pointer border-b-4 border-transparent hover:border-darkblue transition ease-out duration-700">
                         Blog</li>
                 </ul>
-                <button
-                    class="font-bold bg-orange rounded-lg text-white px-14 py-5 hover:bg-darkblue transition duration-300 ease-out">Get
-                    Started</button>
-            </nav>
-        </header>
+            </div>
+            <button
+                class="font-bold bg-orange rounded-lg text-white px-14 py-5 hover:bg-darkblue transition duration-300 ease-out">Get
+                Started</button>
+        </nav>
 
-        <main class="">
-            <div class="hero flex items-center justify-between py-16 md:py-24 my-1">
-
-                <!-- GRID -->
-                <div class="grid grid-cols-2 gap-16 items-center mb-7">
-                    <div class="col-span-2 md:col-span-1">
-                        <!-- LEFT PART -->
-                        <div class="">
-                            <h1 class="font-primary font-bold text-black text-7xl mb-30">Grow your <br> subscription
-                                <br>
-                                business
-                            </h1>
-                            <p class="font-secondary font-normal text-gray text-sm leading-6 font-sans">
-                                Outcome-centered products that reduce churn, <br /> optimize pricing, and grow your
-                                subscription
-                                <br /> business
-                                end-to-end.
-                            </p>
-                            <div class="mt-12 flex items-center">
-                                <button
-                                    class="font-primary font-bold bg-darkblue rounded-lg text-white px-14 py-5 hover:bg-orange transition duration-300 ease-out">Get
-                                    Started</button>
-                                <a href="#" class="ml-10">
-                                    <img src="assets/icons/down_arrow.svg" alt="icon" class="w-full" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-2 md:col-span-1">
-                        <!-- RIGHT PART -->
-                        <div class="">
-                            <img src="assets/images/hero3d.svg" alt="hero-image" />
+        <div class="hero flex items-center justify-between py-16 md:py-24 my-1">
+            <!-- GRID -->
+            <div class="grid grid-cols-2 gap-16 items-center mb-7">
+                <div class="col-span-2 md:col-span-1">
+                    <!-- LEFT PART -->
+                    <div class="">
+                        <h1 class="font-primary font-bold text-black text-5xl md:text-7xl mb-30">Grow your <br>
+                            subscription
+                            <br>
+                            business
+                        </h1>
+                        <p class="font-secondary font-normal text-gray text-xl leading-6 font-sans">
+                            Outcome-centered products that reduce churn, <br /> optimize pricing, and grow your
+                            subscription
+                            <br /> business
+                            end-to-end.
+                        </p>
+                        <div class="mt-12 flex items-center">
+                            <button
+                                class="font-primary font-bold bg-darkblue rounded-lg text-white px-14 py-5 hover:bg-orange transition duration-300 ease-out">Get
+                                Started</button>
+                            <a href="#" class="ml-10">
+                                <img src="assets/icons/down_arrow.svg" alt="icon" class="w-full" />
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- LEFT PART -->
-                <!-- <div class="w-1/2">
-                    <h1 class="font-primary font-bold text-black text-7xl mb-30">Grow your <br> subscription <br>
-                        business
-                    </h1>
-                    <p class="font-secondary font-normal text-gray text-sm leading-6 font-sans">
-                        Outcome-centered products that reduce churn, <br /> optimize pricing, and grow your subscription
-                        <br /> business
-                        end-to-end.
-                    </p>
-                    <div class="mt-12 flex items-center">
-                        <button
-                            class="font-primary font-bold bg-darkblue rounded-lg text-white px-14 py-5 hover:bg-orange transition duration-300 ease-out">Get
-                            Started</button>
-                        <a href="#" class="ml-10">
-                            <img src="assets/icons/down_arrow.svg" alt="icon" />
-                        </a>
+                <div class="col-span-2 md:col-span-1">
+                    <!-- RIGHT PART -->
+                    <div class="text-center">
+                        <img src="assets/images/hero3d.svg" alt="hero-image" />
                     </div>
-                </div> -->
-
-                <!-- RIGHT PART -->
-                <!-- <div class="w-1/2">
-                    <img src="assets/images/hero3d.svg" alt="hero-image" />
-                </div> -->
-            </div>
-
-            <div class="brand-partner">
-                <div class="flex items-center justify-between">
-                    <img src="assets/icons/1.svg" alt="brand-ipsum" />
-                    <img src="assets/icons/2.svg" alt="brand-ipsum" />
-                    <img src="assets/icons/3.svg" alt="brand-ipsum" />
-                    <img src="assets/icons/4.svg" alt="brand-ipsum" />
-                    <img src="assets/icons/5.svg" alt="brand-ipsum" />
                 </div>
             </div>
-        </main>
+        </div>
+    </header>
 
-    </div>
 
+    <section class="brand-partner">
+        <div class="grid grid-cols-4 md:grid-cols-5 gap-4 justify-between items-center">
+            <div class="col-span-4 md:col-span-1 mx-auto p-3 md:p-0">
+                <img src="assets/icons/1.svg" alt="brand-ipsum" />
+            </div>
+            <div class="col-span-2 md:col-span-1 mx-auto p-3 md:p-0">
+                <img src="assets/icons/2.svg" alt="brand-ipsum" />
+            </div>
+            <div class="col-span-2 md:col-span-1 mx-auto p-3 md:p-0">
+                <img src="assets/icons/3.svg" alt="brand-ipsum" />
+            </div>
+            <div class="col-span-2 md:col-span-1 mx-auto p-3 md:p-0">
+                <img src="assets/icons/4.svg" alt="brand-ipsum" />
+            </div>
+            <div class="col-span-2 md:col-span-1 mx-auto p-3 md:p-0">
+                <img src="assets/icons/5.svg" alt="brand-ipsum" />
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription-index mt-36">
+        <div class="grid grid-cols-2 gap-4 items-center">
+            <div class="col-span-2 md:col-span-1 max-w-xs">
+                <img src="assets/images/image2.png" alt="image" />
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <h2 class="font-primary font-bold text-black text-5xl">Subscription index</h2>
+                <p class="font-secondary font-normal text-gray text-xl leading-6 font-sans my-30 w-9/12">
+                    A daily dataset to keep you up to date on subscription market trends and what's happening in your
+                    vertical.
+                </p>
+                <a href="#" class="font-primary font-bold text-darkblue">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="in-depth-metrics mt-36">
+        <div class="grid grid-cols-2 gap-4 items-center">
+            <div class="col-span-2 md:col-span-1">
+                <h2 class="font-primary font-bold text-black text-5xl">In-depth metrics</h2>
+                <p class="font-secondary font-normal text-gray text-xl leading-6 font-sans my-30 w-9/12">
+                    Accurate, real-time reporting at your fingertips. Getting data has never been easier.
+                </p>
+                <a href="#" class="font-primary font-bold text-darkblue">Learn More</a>
+            </div>
+            <div class="col-span-2 md:col-span-1 max-w-xs mx-auto">
+                <img src="assets/images/image3.png" alt="image" />
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 
 </html>
