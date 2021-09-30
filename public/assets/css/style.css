@@ -19418,6 +19418,25 @@ select{
   }
 }
 
+.button {
+  border-radius: 0.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .btn-getStarted {
   margin-top: 3rem;
   --tw-translate-x: 0;
@@ -19467,6 +19486,39 @@ select{
   transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.nav-link-item {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+  cursor: pointer;
+  border-bottom-width: 4px;
+  border-color: transparent;
+}
+
+.nav-link-item:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(84, 84, 212, var(--tw-border-opacity));
+}
+
+.nav-link-item{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.nav-link-item.active {
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgba(84, 84, 212, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(25, 25, 27, var(--tw-text-opacity));
 }
 
 /* .card,

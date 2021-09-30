@@ -9,10 +9,22 @@
   hover:bg-orange hover:text-white transition ease-out duration-500 transform hover:scale-110;
 }
 
+.button {
+  @apply font-primary font-bold rounded-lg text-white px-14 py-5 transition duration-300 ease-out;
+}
+
 .btn-getStarted {
   @apply bg-white  rounded-xl text-darkblue 
   text-center font-primary font-bold text-base py-5 px-24 mt-12
   hover:bg-darkOrange hover:text-white transition ease-out duration-500 transform scale-75;
+}
+
+.nav-link-item {
+  @apply py-2 mx-9 cursor-pointer border-b-4 border-transparent hover:border-darkblue transition ease-out duration-500;
+}
+
+.nav-link-item.active {
+  @apply text-black border-b-4 border-darkblue;
 }
 
 /* .card,
