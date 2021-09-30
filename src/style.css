@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply bg-grayCard text-gray rounded-xl w-max text-center py-9 px-6 mx-auto my-3 md:my-0
+  hover:bg-orange hover:text-white transition ease-out duration-500 transform hover:scale-110;
+}
+
+.btn-getStarted {
+  @apply bg-white  rounded-xl text-darkblue 
+  text-center font-primary font-bold text-base py-5 px-24 mt-12
+  hover:bg-darkOrange hover:text-white transition ease-out duration-500 transform scale-75;
+}
+
+/* .card,
+.btn-getStarted {
+  @apply hover:bg-orange text-white transition ease-out duration-500 transform scale-75;
+} */

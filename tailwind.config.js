@@ -10,9 +10,14 @@ module.exports = {
 
     colors: {
       orange: "#ff7143",
+      darkOrange: "#9F3919",
       darkblue: "#5454d4",
+      smoothPurple: "#F7F7FB",
       black: "#19191b",
+      cardTextBlack: "#1D293F",
       gray: "#696871",
+      grayCard: "#F8F8F8",
+      grayButton: "#EAE9F2",
       white: "#fff",
       transparent: "transparent",
     },
@@ -24,6 +29,9 @@ module.exports = {
       margin: {
         30: '30px',
       },
+      spacing: {
+        1.5: '150%',
+      }
     },
   },
   variants: {
