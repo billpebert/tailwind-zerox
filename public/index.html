@@ -13,33 +13,35 @@
 <body class="min-h-screen max-w-screen-xl mx-auto px-4">
 
     <header class="pt-30 font-primary py-7 my-0.5">
-        <nav class="flex flex-col lg:flex-row justify-between items-center">
-            <img src="assets/icons/logo.svg" alt="logoipsum" />
-            <div class="hidden lg:block">
-                <ul class="inline-flex text-gray font-bold">
-                    <li class="nav-link-item active">Home</li>
-                    <li class="nav-link-item">Features</li>
-                    <li class="nav-link-item">Pricing</li>
-                    <li class="nav-link-item">Blog</li>
-                </ul>
-            </div>
-            <button class="hidden lg:block button bg-orange hover:bg-darkblue">
-                Get Started
-            </button>
-
-            <!-- Mobile menu button -->
-            <div class="block lg:hidden items-center">
-                <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+        <nav>
+            <div class="flex justify-between items-center">
+                <img src="assets/icons/logo.svg" alt="logoipsum" />
+                <div class="hidden lg:block">
+                    <ul class="inline-flex text-gray font-bold">
+                        <li class="nav-link-item active">Home</li>
+                        <li class="nav-link-item">Features</li>
+                        <li class="nav-link-item">Pricing</li>
+                        <li class="nav-link-item">Blog</li>
+                    </ul>
+                </div>
+                <button class="hidden lg:block button bg-orange hover:bg-darkblue">
+                    Get Started
                 </button>
+
+                <!-- Mobile menu button -->
+                <div class="block lg:hidden items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Mobile Menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden mobile-menu mt-3">
                 <ul class="text-gray font-bold">
                     <li class="nav-link-item active">Home</li>
                     <li class="nav-link-item">Features</li>

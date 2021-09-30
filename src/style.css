@@ -20,11 +20,11 @@
 }
 
 .nav-link-item {
-  @apply py-2 mx-9 cursor-pointer border-b-4 border-transparent hover:border-darkblue transition ease-out duration-500;
+  @apply py-2 ml-2 lg:ml-0 mx-0 lg:mx-9 cursor-pointer border-l-4 pl-3 lg:pl-0 lg:border-b-4 border-transparent hover:border-darkblue transition ease-out duration-500;
 }
 
 .nav-link-item.active {
-  @apply text-black border-b-4 border-darkblue;
+  @apply text-black border-darkblue;
 }
 
 /* .card,
