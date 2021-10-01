@@ -17,11 +17,13 @@
         <nav>
             <div class="flex flex-col lg:flex-row items-stretch lg:items-center">
                 <div class="flex justify-between">
+                    <!-- LOGO -->
                     <div>
                         <img src="assets/icons/logo.svg" alt="logoipsum" />
                     </div>
+                    <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
                     <div>
-                        <button class="block lg:hidden outline-none mobile-menu-button p-1">
+                        <button class="block lg:hidden outline-none mobile-menu-button p-1" data-target="#navigation">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-500 hover:text-green-500"
                                 x-show="!showMenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -33,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="mobile-menu hidden lg:block w-full">
+                <div class="mobile-menu hidden lg:block w-full" id="navigation">
                     <div class="flex flex-col lg:flex-row justify-between items-baseline lg:items-center mt-6 lg:mt-0">
                         <div class="flex flex-col lg:flex-row text-gray font-bold mx-0 lg:mx-auto w-full lg:w-max">
                             <a href="#" class="nav-link-item active">Home</a>
@@ -249,15 +251,10 @@
             <!-- END: CARD -->
     </section>
 
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-    <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
-
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar-toggler.js"></script>
 </body>
 
 </html>
