@@ -5,29 +5,27 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-grayCard text-gray rounded-xl w-max text-center py-9 px-6 mx-auto my-3 md:my-0
-  hover:bg-orange hover:text-white transition ease-out duration-500 transform hover:scale-110;
+  @apply bg-grayCard text-gray text-center rounded-xl w-max  
+  py-9 px-6 mx-auto my-3 lg:my-0
+  hover:bg-orange hover:text-white 
+  transition ease-out duration-500 transform hover:scale-110;
 }
 
 .button {
-  @apply font-primary font-bold rounded-lg text-white px-14 py-5 transition duration-300 ease-out;
+  @apply font-primary font-bold text-center text-white
+  rounded-lg px-14 py-5 transition duration-300 ease-out;
 }
 
-.btn-getStarted {
+.btn-card-pricing {
   @apply bg-white  rounded-xl text-darkblue 
   text-center font-primary font-bold text-base py-5 px-24 mt-12
   hover:bg-darkOrange hover:text-white transition ease-out duration-500 transform scale-75;
 }
 
 .nav-link-item {
-  @apply py-2 ml-2 lg:ml-0 mx-0 lg:mx-9 cursor-pointer border-l-4 pl-3 lg:pl-0 lg:border-b-4 border-transparent hover:border-darkblue transition ease-out duration-500;
+  @apply py-3 mx-2 lg:mx-9 cursor-pointer border-l-4 lg:border-l-0 lg:border-b-4 pl-3 lg:pl-0  border-transparent hover:border-darkblue focus:border-orange transition ease-out duration-500;
 }
 
 .nav-link-item.active {
   @apply text-black border-darkblue;
 }
-
-/* .card,
-.btn-getStarted {
-  @apply hover:bg-orange text-white transition ease-out duration-500 transform scale-75;
-} */
