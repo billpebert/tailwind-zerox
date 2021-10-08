@@ -8,6 +8,9 @@
     <title>Tailwind Zerox</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- NAVBAR POPUP -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </head>
 
 <body class="min-h-screen max-w-screen-xl mx-auto px-4">
@@ -24,8 +27,8 @@
                     <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
                     <div>
                         <button class="block lg:hidden outline-none mobile-menu-button p-1" data-target="#navigation">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-500 hover:text-green-500"
-                                x-show="!showMenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" x-show="!showMenu" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16M4 18h7" />
                                 <path stroke-linecap="round" class="hidden" stroke-linejoin="round" stroke-width="2"
@@ -251,10 +254,258 @@
             <!-- END: CARD -->
     </section>
 
-    <section class="daisyui">
+    <section class="daisyui mt-40 bg-cardTextBlack p-7 rounded-3xl">
         <h1>Here is the daisyui</h1>
         <a href="" class="btn btn-primary">Click Me!</a>
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">connected</span>
+            </label>
+            <div class="relative">
+                <input placeholder="Search" class="w-full pr-16 input input-primary input-bordered" type="text">
+                <button class="absolute top-0 right-0 rounded-l-none btn btn-primary">go</button>
+            </div>
+        </div>
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">with space</span>
+            </label>
+            <div class="flex space-x-2">
+                <input placeholder="Search" class="w-full input input-primary border-0" type="text">
+                <button class="btn btn-primary">go</button>
+            </div>
+        </div>
+
+        <div class="border-t-4 border-orange py-4 mt-8">
+            <h3 class="text-orange mb-3">Navbar with dropdown</h3>
+            <div class="navbar mb-2 shadow-lg bg-secondary text-neutral-content rounded-box">
+                <div class="flex-1 px-2 mx-2">
+                    <span class="text-lg font-bold">
+                        daisyUI
+                    </span>
+                </div>
+                <div class="flex-none hidden px-2 mx-2 lg:flex">
+                    <div class="flex items-stretch">
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                            Likes
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg>
+                            Notifications
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z">
+                                </path>
+                            </svg>
+                            Files
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                            Config
+
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                        <button tabindex="0" class="btn btn-square btn-ghost m-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-6 h-6 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-cardTextBlack rounded-box w-52">
+                            <li>
+                                <a>Item 1</a>
+                            </li>
+                            <li>
+                                <a>Item 2</a>
+                            </li>
+                            <li>
+                                <a>Item 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-orange my-3">Navbar with modal</h3>
+            <div class="navbar mb-2 shadow-lg bg-secondary text-neutral-content rounded-box">
+                <div class="flex-1 px-2 mx-2">
+                    <span class="text-lg font-bold">
+                        daisyUI
+                    </span>
+                </div>
+                <div class="flex-none hidden px-2 mx-2 lg:flex">
+                    <div class="flex items-stretch">
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                            Likes
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg>
+                            Notifications
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z">
+                                </path>
+                            </svg>
+                            Files
+
+                        </a>
+                        <a class="btn btn-ghost btn-sm rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 mr-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                            Config
+
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                        <label for="my-modal-2" class="btn btn-square btn-ghost m-1 modal-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-6 h-6 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </label>
+                        <input type="checkbox" id="my-modal-2" class="modal-toggle">
+                        <div class="modal">
+                            <div class="modal-box bg-cardTextBlack rounded-box py-6 px-8">
+                                <div class="flex flex-row justify-between align-top">
+                                    <div class="flex flex-col">
+                                        <a href="#" class="pb-4 lg:pb-0">Hello</a>
+                                        <a href="#" class="pb-4 lg:pb-0">Services</a>
+                                        <a href="#" class="pb-4 lg:pb-0">About</a>
+                                        <a href="#" class="pb-4 lg:pb-0">Portfolio</a>
+                                    </div>
+                                    <div class="modal-action mt-0">
+                                        <label for="my-modal-2" class="btn text-3xl">&times;</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <label for="my-modal-3" class="btn btn-primary modal-button">open modal</label>
+            <input type="checkbox" id="my-modal-3" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-box">
+                    <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque.
+                        Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p>
+                    <div class="modal-action">
+                        <label for="my-modal-3" class="btn btn-primary">Accept</label>
+                        <label for="my-modal-3" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+    <!-- NAVBAR POPUP -->
+    <header x-data="{ open: false }">
+        <div class="mx-auto flex py-12 items-center justify-between lg:justify-start">
+            <a href="#">
+                <img src="assets/icons/logo.svg" alt="logo" />
+            </a>
+            <div class="flex mr-0 lg:hidden cursor-pointer">
+                <svg class="w-7 h-7" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </div>
+            <div :class="{'hidden': !open}" class="bg-black fixed w-full hidden h-full top-0 left-0 z-30 bg-opacity-60"
+                @click="open = !open"></div>
+                <nav class="navigation lg:mr-auto hidden flex-col text-base justify-center z-50 fixed top-8 left-3 right-3 p-8 rounded-md shadow-md bg-white lg:flex lg:flex-row lg:relative lg:top-0 lg:shadow-none lg:bg-transparent lg:p-0 lg:items-center items-start"
+                    :class="{'flex': open, 'hidden': !open}">
+                    <a href="#">
+                        <img class="m-0 lg:hidden mb-3" src="assets/icons/logo.svg" alt="logo" />
+                    </a>
+                    <a class="nav-text text-lg font-bold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active"
+                        href="#">Home</a>
+                    <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
+                        href="#">Feature</a>
+                    <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
+                        href="#">Pricing</a>
+                    <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
+                        href="#">About
+                        Us</a>
+                    <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
+                        href="#">Contact</a>
+                    <div class="flex items-center justify-between lg:justify-end w-full lg:hidden mt-3">
+                        <button
+                            class="bg-orange text-white font-semibold text-lg rounded-xl py-3 px-8 focus:outline-none">
+                            Log In
+                        </button>
+                        <button
+                            class="bg-darkblue text-white py-3 px-8 rounded-xl focus:outline-none hover:shadow-lg font-semibold text-lg">
+                            Try Now
+                        </button>
+                    </div>
+                    <svg @click="open = !open" class="w-7 h-7 absolute top-4 right-4 lg:hidden cursor-pointer"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </nav>
+                <div class="hidden lg:inline-flex gap-3">
+                    <button
+                        class="bg-orange rounded-xl inline-flex text-white font-semibold text-lg leading-7 py-3 px-8 focus:outline-none">
+                        Log In
+                    </button>
+                    <button
+                        class="bg-darkblue inline-flex text-white text-lg leading-7 py-3 px-8 rounded-xl focus:outline-none hover:shadow-lg font-semibold">
+                        Try Now
+                    </button>
+                </div>
+            </div>
+    </header>
 
     <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
